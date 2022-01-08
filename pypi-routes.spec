@@ -4,7 +4,7 @@
 #
 Name     : pypi-routes
 Version  : 2.5.1
-Release  : 49
+Release  : 50
 URL      : https://files.pythonhosted.org/packages/62/01/1504b710f68840f4152d460a4ffbc6b8265485b636235ddd72a8dfe686ae/Routes-2.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/62/01/1504b710f68840f4152d460a4ffbc6b8265485b636235ddd72a8dfe686ae/Routes-2.5.1.tar.gz
 Summary  : Routing Recognition and Generation Tools
@@ -13,16 +13,9 @@ License  : MIT
 Requires: pypi-routes-license = %{version}-%{release}
 Requires: pypi-routes-python = %{version}-%{release}
 Requires: pypi-routes-python3 = %{version}-%{release}
-BuildRequires : WebTest
 BuildRequires : buildreq-distutils3
-Provides: Routes
-Provides: Routes-python
-Provides: Routes-python3
-BuildRequires : coverage-python
 BuildRequires : pypi(repoze.lru)
 BuildRequires : pypi(six)
-BuildRequires : repoze.lru-python
-BuildRequires : webob-python
 
 %description
 URL's to Controllers/Actions and generating URL's. Routes makes it easy to
@@ -70,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641491304
+export SOURCE_DATE_EPOCH=1641602479
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
